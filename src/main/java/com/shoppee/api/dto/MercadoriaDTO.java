@@ -1,5 +1,6 @@
 package com.shoppee.api.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.shoppee.api.entity.Categoria;
 import com.shoppee.api.entity.Fornecedor;
 import jakarta.persistence.JoinColumn;
@@ -10,9 +11,9 @@ public class MercadoriaDTO {
     private String nome;
     private double preco;
     private int quantidade;
-
+    @JsonIgnore
     private Categoria categoria;
-
+    @JsonIgnore
     private Fornecedor fornecedor;
     //construtores
 
