@@ -1,0 +1,25 @@
+meta {
+  name: Atualizar Mercadoria
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/api/mercadoria/c2a8992c-e3ec-4649-889b-cb80199f1304
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nome":"Arroz",
+    "preco":7.99,
+    "quantidade": 2,  
+    "categoria": {"id": "a46704de-4859-4dd1-80e1-48c254f037b9"},
+    "fornecedor":{"id": "723e85b4-19a8-41b5-9e06-de05ecf74908"}  
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Buscar uma mercadoria por ID
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/api/mercadoria/c2a8992c-e3ec-4649-889b-cb80199f1304
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
